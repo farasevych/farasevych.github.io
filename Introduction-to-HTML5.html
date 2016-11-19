@@ -112,6 +112,93 @@
 			communication and processing as it crosses the internal network, through the first router,
 			across the public network (internet connection), into the recipient’s router, and then is
 			reassembled into its original form.</p>
+		
+			<p>Until recently, most network equipment has operated on IPv4, the fourth standard released 
+			for IP addresses, which has been in place for about thirty years. Addresses in this
+			format are typically represented as a pattern of four blocks of up to three digits separated by
+			periods, with no block of numbers exceeding 255 such as 127.0.0.1 or 24.38.1.251. This is
+			referred to as dot-decimal representation, and although it is not the only way to express an
+			IPv4 address it is the most recognized form. Segments of the addresses within the ranges
+			of 192.168.xxx.xxx, 172.16.xxx.xxx to 172.31.xxx.xxx, and 10.0.xxx.xxx to 10.255.xxx.xxx
+			are reserved for private networks, meaning they are used within a network in your house,
+			at work, or anywhere else where a group of computers share a connection to the internet.</p>
+		
+			<p>Each of these networks uses one or more of these blocks of numbers for devices on that
+network. Only the equipment connecting that local network to the Internet needs a unique
+address from the rest of the world. That equipment will track which computer inside the
+network to send data to and from by reading packets—the individual pieces of messages
+that are sent across networks. This means your computer might be 192.168.1.25 at home,
+and so might your computer at work, according to your home and work networks. The
+connection between your house and office thought still have a different, unique number
+assigned to them.</p>
+		
+		<p>This separation of networks was done to reduce the speed at which unique addresses
+were consumed. Although this scheme allows for almost 4.3 billion (accurately, 232) ad-
+dresses, the last one was officially assigned on February 4th, 2012. To sustain today’s growing
+number of devices, IPv6 was created, which is depicted as eight blocks of four hexadecimal
+digits now separated by colons. These new addresses might look like 2001:0db8:85a3:0042
+:1000:8a2e:0370:7334, and can support roughly 4 billion unique addresses. Since the new
+range is so staggeringly large, additional protocols were created that specify when certain
+values or ranges are used in addresses. This allows additional information about the device
+to be conveyed just from the address.</p>
+		
+		<p>The actual messages sent between machines are broken down into multiple pieces. These
+pieces, called packets, are sent piece by piece from sender to recipient. Each packet is sent
+the fastest way possible, which means some packets may take different routes—picture a
+short cut, or getting off a congested road to take a different one. This helps to ensure that
+the message gets from sender to receiver as fast as possible, but also means packets may
+arrive in a different order than they were sent.</p>
+		
+		<p>To account for this, each piece of the message, or payload, is wrapped in a header—
+additional information that describes how many other pieces there are, what protocol is
+being used, where the packet came from and is headed to, along with some other related
+information.</p>
+		
+			<p><b>URL</b>Seeing as most of us would have a hard time remembering what IP address is needed to
+			get to, say, Facebook (173.252.100.16) or the Weather Channel (96.8.80.132) we instead
+			use URLs, universal resource locators. This allows us to use www.facebook.com and www.
+			weather.com to get to where we want to go without referring to a long list of IP addresses.
+			Specialized servers (called name servers) all around the world are responsible for responding
+			to requests from computers for this information. When you type facebook.com into your
+			address bar, if your router does not have a note of its own as to where that is, it will “ask” a
+			name server, which will look it up in its records and reply.</p>
+		
+			<p>There are three parts to a network address: the protocol, name, and resource id. The
+			protocol represents how we want to send and receive messages, for example we can use
+			http:// for accessing websites and ftp:// for moving files. The name is what we associate with the site, 
+			like www.facebook.com, and the resource id, or URI, is everything after that,
+			which points to the particular file we want to see.</p>
+		
+			<p><b>Ports</b>
+While an IP address and a URL will bring you to a particular web server, there may be
+more than one way you want to interact with it, or more than one thing you want it to do.
+Maybe you also want the server to provide email services, or you want to use FTP to update
+your files. These ports act as different doors into your server, so different applications can
+communicate without getting in each other’s way. Certain ports are typically used for cer-
+tain activities, for example port 80 is the standard port for web traffic (your browser viewing
+a page), as opposed to ftp, which typically uses port 21. Using standard ports is not a rule,
+as applications can be configured to use any available port number, but it is recommended
+in most cases as firewalls and other security devices may require additional configuring to
+keep them from blocking wanted traffic because it is arriving at an unusual, fire walled, or
+“locked” port.</p>
+		
+			<p><b>Hosting Facilities</b>
+If you are using a server that is not under your physical care, and is managed by an off-
+site third party, then you likely have an agreement with a hosting facility. Hosting facilities
+are typically for-profit companies that manage the physical equipment necessary to provide
+access to websites for a number of clients. Many offer web development and management
+services as well, but if you are still reading, then that tidbit is probably of little interest as
+you are here to build it yourself.</p>
+			
+			<p>The benefit of using a hosting service falls under the same principles as other cloud
+computing services. You are paying to rent equipment and/or services in place of investing
+in equipment and managing the server and Internet connection yourself. Additionally,
+hosting facilities are equipped with backup power sources as well as redundant connections
+to the internet, and may even have multiple facilities that are physically dispersed, ensuring
+their clients have the best up time as possible. Ads like the one below are common to these
+services and often emphasize their best features. Price competition makes for relatively
+affordable hosting for those who are not looking for dedicated servers and are comfortable
+with sharing their (virtual) server resources with other customers.</p>
 			
 	</div>
 	<!-- week1 end -->
