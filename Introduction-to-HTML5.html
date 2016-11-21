@@ -18,6 +18,7 @@
 					<li><a href="#week1">Week One</a>
 					<ul>
 						<li><a href="#welcome">Welcome</a></li>
+						<li><a href="#history">History and Evolution</a></li>
 					</ul>
 					</li>
 				</ul>
@@ -131,35 +132,35 @@
 			at work, or anywhere else where a group of computers share a connection to the internet.</p>
 		
 			<p>Each of these networks uses one or more of these blocks of numbers for devices on that
-network. Only the equipment connecting that local network to the Internet needs a unique
-address from the rest of the world. That equipment will track which computer inside the
-network to send data to and from by reading packets—the individual pieces of messages
-that are sent across networks. This means your computer might be 192.168.1.25 at home,
-and so might your computer at work, according to your home and work networks. The
-connection between your house and office thought still have a different, unique number
-assigned to them.</p>
+			network. Only the equipment connecting that local network to the Internet needs a unique
+			address from the rest of the world. That equipment will track which computer inside the
+			network to send data to and from by reading packets—the individual pieces of messages
+			that are sent across networks. This means your computer might be 192.168.1.25 at home,
+			and so might your computer at work, according to your home and work networks. The
+			connection between your house and office thought still have a different, unique number
+			assigned to them.</p>
 		
-		<p>This separation of networks was done to reduce the speed at which unique addresses
-were consumed. Although this scheme allows for almost 4.3 billion (accurately, 232) ad-
-dresses, the last one was officially assigned on February 4th, 2012. To sustain today’s growing
-number of devices, IPv6 was created, which is depicted as eight blocks of four hexadecimal
-digits now separated by colons. These new addresses might look like 2001:0db8:85a3:0042
-:1000:8a2e:0370:7334, and can support roughly 4 billion unique addresses. Since the new
-range is so staggeringly large, additional protocols were created that specify when certain
-values or ranges are used in addresses. This allows additional information about the device
-to be conveyed just from the address.</p>
+			<p>This separation of networks was done to reduce the speed at which unique addresses
+			were consumed. Although this scheme allows for almost 4.3 billion (accurately, 232) ad-
+			dresses, the last one was officially assigned on February 4th, 2012. To sustain today’s growing
+			number of devices, IPv6 was created, which is depicted as eight blocks of four hexadecimal
+			digits now separated by colons. These new addresses might look like 2001:0db8:85a3:0042
+			:1000:8a2e:0370:7334, and can support roughly 4 billion unique addresses. Since the new
+			range is so staggeringly large, additional protocols were created that specify when certain
+			values or ranges are used in addresses. This allows additional information about the device
+			to be conveyed just from the address.</p>
 		
-		<p>The actual messages sent between machines are broken down into multiple pieces. These
-pieces, called packets, are sent piece by piece from sender to recipient. Each packet is sent
-the fastest way possible, which means some packets may take different routes—picture a
-short cut, or getting off a congested road to take a different one. This helps to ensure that
-the message gets from sender to receiver as fast as possible, but also means packets may
-arrive in a different order than they were sent.</p>
+			<p>The actual messages sent between machines are broken down into multiple pieces. These
+			pieces, called packets, are sent piece by piece from sender to recipient. Each packet is sent
+			the fastest way possible, which means some packets may take different routes—picture a
+			short cut, or getting off a congested road to take a different one. This helps to ensure that
+			the message gets from sender to receiver as fast as possible, but also means packets may
+			arrive in a different order than they were sent.</p>
 		
-		<p>To account for this, each piece of the message, or payload, is wrapped in a header—
-additional information that describes how many other pieces there are, what protocol is
-being used, where the packet came from and is headed to, along with some other related
-information.</p>
+			<p>To account for this, each piece of the message, or payload, is wrapped in a header—
+			additional information that describes how many other pieces there are, what protocol is
+			being used, where the packet came from and is headed to, along with some other related
+			information.</p>
 		
 			<p><b>URL</b><br>Seeing as most of us would have a hard time remembering what IP address is needed to
 			get to, say, Facebook (173.252.100.16) or the Weather Channel (96.8.80.132) we instead
@@ -177,156 +178,158 @@ information.</p>
 			which points to the particular file we want to see.</p>
 		
 			<p><b>Ports</b><br>
-While an IP address and a URL will bring you to a particular web server, there may be
-more than one way you want to interact with it, or more than one thing you want it to do.
-Maybe you also want the server to provide email services, or you want to use FTP to update
-your files. These ports act as different doors into your server, so different applications can
-communicate without getting in each other’s way. Certain ports are typically used for cer-
-tain activities, for example port 80 is the standard port for web traffic (your browser viewing
-a page), as opposed to ftp, which typically uses port 21. Using standard ports is not a rule,
-as applications can be configured to use any available port number, but it is recommended
-in most cases as firewalls and other security devices may require additional configuring to
-keep them from blocking wanted traffic because it is arriving at an unusual, fire walled, or
-“locked” port.</p>
+			While an IP address and a URL will bring you to a particular web server, there may be
+			more than one way you want to interact with it, or more than one thing you want it to do.
+			Maybe you also want the server to provide email services, or you want to use FTP to update
+			your files. These ports act as different doors into your server, so different applications can
+			communicate without getting in each other’s way. Certain ports are typically used for cer-
+			tain activities, for example port 80 is the standard port for web traffic (your browser viewing
+			a page), as opposed to ftp, which typically uses port 21. Using standard ports is not a rule,
+			as applications can be configured to use any available port number, but it is recommended
+			in most cases as firewalls and other security devices may require additional configuring to
+			keep them from blocking wanted traffic because it is arriving at an unusual, fire walled, or
+			“locked” port.</p>
 		
 			<p><b>Hosting Facilities</b><br>
-If you are using a server that is not under your physical care, and is managed by an off-
-site third party, then you likely have an agreement with a hosting facility. Hosting facilities
-are typically for-profit companies that manage the physical equipment necessary to provide
-access to websites for a number of clients. Many offer web development and management
-services as well, but if you are still reading, then that tidbit is probably of little interest as
-you are here to build it yourself.</p>
+			If you are using a server that is not under your physical care, and is managed by an off-
+			site third party, then you likely have an agreement with a hosting facility. Hosting facilities
+			are typically for-profit companies that manage the physical equipment necessary to provide
+			access to websites for a number of clients. Many offer web development and management
+			services as well, but if you are still reading, then that tidbit is probably of little interest as
+			you are here to build it yourself.</p>
 			
 			<p>The benefit of using a hosting service falls under the same principles as other cloud
-computing services. You are paying to rent equipment and/or services in place of investing
-in equipment and managing the server and Internet connection yourself. Additionally,
-hosting facilities are equipped with backup power sources as well as redundant connections
-to the internet, and may even have multiple facilities that are physically dispersed, ensuring
-their clients have the best up time as possible. Ads like the one below are common to these
-services and often emphasize their best features. Price competition makes for relatively
-affordable hosting for those who are not looking for dedicated servers and are comfortable
-with sharing their (virtual) server resources with other customers.</p>
-		
+			computing services. You are paying to rent equipment and/or services in place of investing
+			in equipment and managing the server and Internet connection yourself. Additionally,
+			hosting facilities are equipped with backup power sources as well as redundant connections
+			to the internet, and may even have multiple facilities that are physically dispersed, ensuring
+			their clients have the best up time as possible. Ads like the one below are common to these
+			services and often emphasize their best features. Price competition makes for relatively
+			affordable hosting for those who are not looking for dedicated servers and are comfortable
+			with sharing their (virtual) server resources with other customers.</p>		
 		</details>
 		
 		<details>
 			<summary>
 		<b>Chapter 7: Markup Languages</b>	
-			</summary>
-			
+			</summary>			
 			<p>Document markup is a notation method that defines how particular pieces of information
-are meant to be formatted. The term comes from the practice of marking up manuscripts to
-notate changes that need to be made. Markup in terms of programming languages is used
-to identify a language that specifies how a document is to appear.</p>
+			are meant to be formatted. The term comes from the practice of marking up manuscripts to
+			notate changes that need to be made. Markup in terms of programming languages is used
+			to identify a language that specifies how a document is to appear.</p>
 		
 			<p>If you have ever used multiple colors of ink or highlighter when making notes and
-ascribed meaning to those colors for yourself (e.g., yellow highlighter is important, red
-ink is a definition) then you have already practiced document markup. You are providing
-additional layers of information along with the written text, in this case visual cues as to the
-purpose of the written information.</p>
+			ascribed meaning to those colors for yourself (e.g., yellow highlighter is important, red
+			ink is a definition) then you have already practiced document markup. You are providing
+			additional layers of information along with the written text, in this case visual cues as to the
+			purpose of the written information.</p>
 		
 			<p>Some popular markup languages are hypertext markup language (HTML), extensible
-markup language (XML) and extensible hypertext markup language (XHTML).These
-were each created to fulfill particular needs in defining the layout and structure of the
-material.</p>
+			markup language (XML) and extensible hypertext markup language (XHTML).These
+			were each created to fulfill particular needs in defining the layout and structure of the
+			material.</p>
 		
-		<p><b>HTML5</b><br>Hypertext markup language is used to aid in the publication of web pages by providing
-a structure that defines elements like tables, forms, lists and headings, and identifies where
-different portions of our content begin and end. It can be used to embed other file formats
-like videos, audio files, documents like PDFs and spreadsheets, among others. HTML is
-the most relied upon language in the creation of web sites. In this text we will focus on
-HTML5. While it is technically still in draft form, many proposed elements are already
-supported by the newer versions of most of the popular browsers.</p>
+			<p><b>HTML5</b><br>Hypertext markup language is used to aid in the publication of web pages by providing
+			a structure that defines elements like tables, forms, lists and headings, and identifies where
+			different portions of our content begin and end. It can be used to embed other file formats
+			like videos, audio files, documents like PDFs and spreadsheets, among others. HTML is
+			the most relied upon language in the creation of web sites. In this text we will focus on
+			HTML5. While it is technically still in draft form, many proposed elements are already
+			supported by the newer versions of most of the popular browsers.</p>
 		
-		<p><b>HTML5: History </b>In the beginning, back to the first days of the Internet and ARPA, the primary purpose
-of creating a page was to share research and information. HTML tags were only meant to
-provide layout and formatting of a page. As such, early implementations of HTML were
-somewhat limited as there was little demand for features beyond the basics. Headings,
-bullets, tables, and color were about all developers had to utilize. As sites were created for
-other more commercial uses, developers found creative ways of using these tools to get their
-pages looking more like magazines, advertisements, and what they had drawn on paper.
-Having been one of those developers, I recall the days of just-get-it-looking-right tech-
-niques, splicing page-sized images into tables so graphics were (usually) where we wanted
-them, nesting tables within tables to create complex layouts, and other methods that violate
-today’s best practices.</p>
+			<p><b>HTML5: History </b>In the beginning, back to the first days of the Internet and ARPA, the primary purpose
+			of creating a page was to share research and information. HTML tags were only meant to
+			provide layout and formatting of a page. As such, early implementations of HTML were
+			somewhat limited as there was little demand for features beyond the basics. Headings,
+			bullets, tables, and color were about all developers had to utilize. As sites were created for
+			other more commercial uses, developers found creative ways of using these tools to get their
+			pages looking more like magazines, advertisements, and what they had drawn on paper.
+			Having been one of those developers, I recall the days of just-get-it-looking-right tech-
+			niques, splicing page-sized images into tables so graphics were (usually) where we wanted
+			them, nesting tables within tables to create complex layouts, and other methods that violate
+			today’s best practices.</p>
 		
-		<p><b>HTML5: Current State </b>While not formally finalized, many browsers are already supporting a number of features
-proposed in drafts of HTML5, including things like canvas and media support that greatly
-improve the browser’s ability to process and display complex materials without requiring
-extensive coding and extensions. In the past, sites that used video and audio players had to
-integrate support for many players, and would have to include the libraries and formatted
-files for those systems in their sites. By providing a solution to using these media forms
-within HTML5, we can improve on the user experience and reduce the efforts necessary
-to provide them.</p>
-		<p>While these new features do reduce the amount of programming required to imple-
-ment higher level elements, and include interactive elements that exceed document markup
-activities, HTML5 is still considered a markup language.</p>
-		<p>In these languages, we use tags to ascribe additional meaning to our text, which provide
-instruction to the browser as to how to display the text on the screen, but are not necessarily
-displayed to the user. In HTML and XHTML these tags are fixed, or predefined, meaning
-the names that can be used in the tags are limited to what browsers are able to recognize.
-In XML, tags are defined by the person creating the content as they are typically used in
-conjunction with data sources and provide information.</p>
+			<p><b>HTML5: Current State </b>While not formally finalized, many browsers are already supporting a number of features
+			proposed in drafts of HTML5, including things like canvas and media support that greatly
+			improve the browser’s ability to process and display complex materials without requiring
+			extensive coding and extensions. In the past, sites that used video and audio players had to
+			integrate support for many players, and would have to include the libraries and formatted
+			files for those systems in their sites. By providing a solution to using these media forms
+			within HTML5, we can improve on the user experience and reduce the efforts necessary
+			to provide them.</p>
+			
+			<p>While these new features do reduce the amount of programming required to imple-
+			ment higher level elements, and include interactive elements that exceed document markup
+			activities, HTML5 is still considered a markup language.</p>
+			
+			<p>In these languages, we use tags to ascribe additional meaning to our text, which provide
+			instruction to the browser as to how to display the text on the screen, but are not necessarily
+			displayed to the user. In HTML and XHTML these tags are fixed, or predefined, meaning
+			the names that can be used in the tags are limited to what browsers are able to recognize.
+			In XML, tags are defined by the person creating the content as they are typically used in
+			conjunction with data sources and provide information.</p>
 		
-		<p><b>HTML5: W3C Standards </b>The World Wide Web Consortium,1 or W3C, is an international community that sup-
-ports web development through the creation of open standards that provide the best user
-experience possible for the widest audience of users. This group of professionals and experts
-come together to determine how CSS and HTML should operate, what tags should be
-included as features, and more. The W3C is also your best reference point in determining
-the accessibility of your site through the use of tools that analyze your code for W3C
-compliance. These tools confirm if you have fully implemented elements in your code, like
-providing alternate text descriptions of images in the event that the image cannot load, or
-the user is visually impaired.</p>
+			<p><b>HTML5: W3C Standards </b>The World Wide Web Consortium,1 or W3C, is an international community that sup-
+			ports web development through the creation of open standards that provide the best user
+			experience possible for the widest audience of users. This group of professionals and experts
+			come together to determine how CSS and HTML should operate, what tags should be
+			included as features, and more. The W3C is also your best reference point in determining
+			the accessibility of your site through the use of tools that analyze your code for W3C
+			compliance. These tools confirm if you have fully implemented elements in your code, like
+			providing alternate text descriptions of images in the event that the image cannot load, or
+			the user is visually impaired.</p>
 		
-		<p><b>CSS</b><br>CSS stands for cascading style sheet, and is used to create rules about the color, font, and
-layout of our pages. It also determines when those rules are to be used, based on informa-
-tion like the device connecting to the page, or in response to a user’s action. CSS can be
-used by not only HTML but any XML-based language. By separating as much of the look
-and feel of a page from HTML as possible, we actually separate content from appearance.
-This makes it possible to quickly create several different versions of the appearance of our
-site, without recreating the content in each version. Our best approach is to use HTML to
-define the structure (and only structure) of our pages whenever possible, laying the ground-
-work for CSS to know where to apply the actual style.</p>
-		<p><b>CSS: History</b> As HTML grew in popularity, demands on its feature set also grew. Combined with the
-variety of browser implementations and their varied approaches to rendering and support,
-creating robust, visually appealing sites involved a significant amount of time and effort. To
-reduce these, and separate the duties of presentation from those of content, proposals were
-sought to define a new system of managing these features. CSS was born out of CHSS,
-or Cascading Hypertext Style Script, and extends our capabilities by allowing us to go far
-beyond the styling limits of HTML by giving us more power over images, making pages
-appear more newspaper or magazine-like with layout and typography affects, and reducing
-load time.</p>
-		<p>Introduced for public use in 1996, CSS1 contained the ability to apply rules by iden-
-tifying elements (selectors), and most of the properties still in use today. CSS2 added the
-ability to adapt for different displays and devices, as well as positioning elements by specific
-values on the page. CSS2.1 followed with the introduction of additional features, but these
-were not considered substantial enough to warrant a full version number change.</p>
+			<p><b>CSS</b><br>CSS stands for cascading style sheet, and is used to create rules about the color, font, and
+			layout of our pages. It also determines when those rules are to be used, based on informa-
+			tion like the device connecting to the page, or in response to a user’s action. CSS can be
+			used by not only HTML but any XML-based language. By separating as much of the look
+			and feel of a page from HTML as possible, we actually separate content from appearance.
+			This makes it possible to quickly create several different versions of the appearance of our
+			site, without recreating the content in each version. Our best approach is to use HTML to
+			define the structure (and only structure) of our pages whenever possible, laying the ground-
+			work for CSS to know where to apply the actual style.</p>
+			
+			<p><b>CSS: History</b> As HTML grew in popularity, demands on its feature set also grew. Combined with the
+			variety of browser implementations and their varied approaches to rendering and support,
+			creating robust, visually appealing sites involved a significant amount of time and effort. To
+			reduce these, and separate the duties of presentation from those of content, proposals were
+			sought to define a new system of managing these features. CSS was born out of CHSS,
+			or Cascading Hypertext Style Script, and extends our capabilities by allowing us to go far
+			beyond the styling limits of HTML by giving us more power over images, making pages
+			appear more newspaper or magazine-like with layout and typography affects, and reducing
+			load time.</p>
+			
+			<p>Introduced for public use in 1996, CSS1 contained the ability to apply rules by iden-
+			tifying elements (selectors), and most of the properties still in use today. CSS2 added the
+			ability to adapt for different displays and devices, as well as positioning elements by specific
+			values on the page. CSS2.1 followed with the introduction of additional features, but these
+			were not considered substantial enough to warrant a full version number change.</p>
 		
-		<p><b>CSS: Current State</b> While commonly referred to as CSS3, the numbering no longer applies to the language
-as a whole. The developers have decided to break the language into modules, allowing
-different aspects of the language to be revised and released independent of one another.
-This allows for stable modules to stay numbered as they are (since they are not actually
-changing), while those under more active development can be pushed out as needed. At
-the moment, most of the “current” modules are at version number 3. Some have not really
-changed from 2.1, while work on version 4 of selected modules is already underway.</p>
+			<p><b>CSS: Current State</b> While commonly referred to as CSS3, the numbering no longer applies to the language
+			as a whole. The developers have decided to break the language into modules, allowing
+			different aspects of the language to be revised and released independent of one another.
+			This allows for stable modules to stay numbered as they are (since they are not actually
+			changing), while those under more active development can be pushed out as needed. At
+			the moment, most of the “current” modules are at version number 3. Some have not really
+			changed from 2.1, while work on version 4 of selected modules is already underway.</p>
 		
-		<p><b>Document Object Model</b><br>Our ability to manipulate and create webpages consistently across formats comes from
-the document object model API, typically referred to as DOM. This API defines the order
-and structure of document files as well as how the file is manipulated to create, edit, or
-remove contents.</p>
+			<p><b>Document Object Model</b><br>Our ability to manipulate and create webpages consistently across formats comes from
+			the document object model API, typically referred to as DOM. This API defines the order
+			and structure of document files as well as how the file is manipulated to create, edit, or
+			remove contents.</p>
 		
-		<p>The DOM is built to be language and platform independent so any software or program-
-ming language can use it to interface with documents. It defines the interface methods and
-object types that represent elements of documents, the semantics and behavior of attributes
-of those objects, and also defines how they relate to one another. The DOM, effectively,
-is what gives rise to the tags we are about to study below. Languages that use the DOM,
-however, are not required to include all of its features, and may generate additional features
-of their own.</p>
-		<p>Figure 20 depicts an example of a document’s model in tree format, with nested ele-
-ments appearing to the right and below their parents. In this example, we are shown an
-HTML page with a section for the head and the body, which includes a page title and a
-link as its contents. This structure provides the ability for us to traverse, or move around the
-document, by referring to an object’s name or attribute.</p>
+			<p>The DOM is built to be language and platform independent so any software or program-
+			ming language can use it to interface with documents. It defines the interface methods and
+			object types that represent elements of documents, the semantics and behavior of attributes
+			of those objects, and also defines how they relate to one another. The DOM, effectively,
+			is what gives rise to the tags we are about to study below. Languages that use the DOM,
+			however, are not required to include all of its features, and may generate additional features
+			of their own.</p>
+			<p>Figure 20 depicts an example of a document’s model in tree format, with nested ele-
+			ments appearing to the right and below their parents. In this example, we are shown an
+			HTML page with a section for the head and the body, which includes a page title and a
+			link as its contents. This structure provides the ability for us to traverse, or move around the
+			document, by referring to an object’s name or attribute.</p>
 		</details>
 		<p>The W3C built <a href="https://validator.w3.org/">HTML</a> code walidator.</p>
 		<p><a href="http://learn.shayhowe.com/html-css/getting-to-know-html/">Getting to Know HTML</a> (Optional but oh so good)</p>
@@ -334,6 +337,8 @@ document, by referring to an object’s name or attribute.</p>
 		<p><a href="https://boagworld.com/dev/semantic-code-what-why-how/">Semantic code: What? Why? How?</a></p>
 		<p><a href="https://dev.opera.com/articles/new-structural-elements-in-html5/">New Structural Elements in HTML5</a></p>
 		<p><a href="http://www.copypastecharacter.com/">List of character encodings</a></p>
+		
+		<h3 id="history">History and Evolution</h3>
 	</section>
 	<!-- week1 end -->
 	<hr>
