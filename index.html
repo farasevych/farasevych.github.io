@@ -1,100 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-	<style type="text/css">
-	fieldset{width:720px; background:lightyellow; border:10px solid yellow; margin-bottom:10px}
-	label{width:180px; display:inline-block; text-align:right;}
-	.radio1{width:auto}
-	.checkbox1{width:auto}
-	.textarea{width:360px; height: 50px}
-	.left{background-color:brown; color:white; text-align:center; width:55px;}
-	.right{background-color:purple; color:white; text-align:center; width:55px}
-	label:hover{font-size:25px}
-	input:hover{font-size:25px}
-	h1:hover{color:red}	
+	<title>Hello</title>
+	
+	<style type="text/css">		
 	</style>
 </head>
 <body>
-	<form action="http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" method="post" enctype="multipart/form-data">
-		<h1>Please Enter Your Details For Our Dating Website!</h1>
-<!--First fieldset-->
-		<fieldset>
-		<legend>Your Face</legend>
-			<label for="avatar">Your image:</label>
-			<input type="file" id="avatar" name="avatar" required>
-			<br>
-			<label for="img">Image preview:</label>
-			<img src="" id="preview" name="img">			
-		</fieldset>
-<!--Second fieldset-->
-		<fieldset>
-		<legend>Your General Details</legend>
-			<label for="name">Name:</label>
-			<input type="text" placeholder="Your full name" name="name" required>
-			<br>
-			<label for="gender">Gender:</label>
-			<input type="radio" name="gender" value="male" class="radio1" required>Male
-			<input type="radio" name="gender" value="female" class="radio1" required>Female
-			<br>
-			<label for="age">Age:</label>
-			<input type="number" min="0" max="99" step="1" value="18" name="age" required>
-			<br>
-			<label for="birthday">Date of birth:</label>
-			<input type="date" name="birthday">
-			<br>
-			<label for="color">Favorite color</label>
-			<input type="color" name="color">
-			<br>
-			<label for="country">Which country:</label>
-			<select name="country">
-				<option></option>
-				<option value="ua">Ukraine</option>
-				<option value="md">Moldova</option>
-				<option value="pl">Poland</option>
-				<option value="mng">Mongoliya</option>
-				<option value="nk">North Korea</option>
-			</select>
-		</fieldset>
-<!--Third fieldset-->
-		<fieldset>
-		<legend>Your Indicators</legend>
-		<table>
-			<tr>
-				<td><label for="height">Height:</label></td>
-				<td class="left">Short</td>
-				<td><input type="range" name="height" min="0" max="100" step="5" value="50"></td>
-				<td class="right">Tall</td>
-			</tr>
-			<tr>
-				<td><label for="salary">Salary:</label></td>
-				<td class="left">Poor</td>
-				<td><input type="range" name="salary" min="0" max="100" step="5" value="50"></td>
-				<td class="right">Rich</td>
-			</tr>
-		</table>		
-		</fieldset>
-<!--Fourth fieldset-->
-		<fieldset>
-		<legend>Your Contact Information</legend>
-			<label for="email">Email:</label>
-			<input type="email" name="email" required>
-			<br>
-			<label for="mobile">Mobile:</label>
-			<input type="tel" name="mobile">
-			<br>
-			<label for="adress">Adress:</label>
-			<textarea class="textarea" name="adress"></textarea>
-			<br>
-			<label for="contact">Method to contact you:</label>
-			<input type="checkbox" name="contact" value="email" class="checkbox1">Email
-			<input type="checkbox" name="contact" value="whatsapp" class="checkbox1">Whatsapp
-			<input type="checkbox" name="contact" value="in-app chat" class="checkbox1">In-app chat
-		</fieldset>
-			<input type="submit">	
-	</form>
-	<script src="https://www.cse.ust.hk/~rossiter/dating_web_site.js"></script>
-	<br><br>
+	
+		
+	<br>
 	<a href="dating-website.html">Dating Website</a>
 	<a href="part-2.html">Color game</a>
 	<br>
