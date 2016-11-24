@@ -489,6 +489,78 @@ page, if at all.</p>
 			we want:</p>									
 		</details>
 		
+		<details>
+			<summary>
+		<b>Chapter 11: Navigation</b>
+			</summary>
+			<p>A feature found on almost every websites is a navigation system for moving between pages.
+			These are typically menus, where groups of common pages are created to give the site a
+			hierarchical organization. While the approach to visual styling and interaction with menus
+			comes in great variety, most follow a basic principle of using unordered lists of links, and
+			the application of CSS to those lists in order to turn them into the colorful, interactive
+			elements we are accustomed to. While there are drawbacks that we will discuss in Visually
+			Impaired Considerations, alternative approaches can still utilize linked lists to some extent.</p>
+			
+			<p>Some popular approaches to providing a means of navigation are menu bars with drop
+			downs, bread crumbs, and event driven responses. Menu bars are the most frequently uti-
+			lized element, where hovering or clicking over an item in the menu brings up additional
+			choices related to the main item. Typically referred to as drop down menus, they can be
+			styled to move in any direction. Nesting lists within lists can give us a multi-tier menu that
+			allows us the ability to select from a large number of pages with little effort.</p>
+			
+			<p>The breadcrumb does not follow a hierarchical notation, but acts more like a brief his-
+			tory of where you have been on the site, allowing you to skip back several steps at once
+			without using your browser’s back button. These can be helpful in sites with large amounts
+			of content where the user’s experience may not be particularly linear, as they move between
+			topics or sections, like news or reference sites.</p>
+			
+			<p>Event-driven navigation is useful in narrowing the user experience to a fixed set of paths.
+			This method will only make certain links available under certain conditions, restricting the
+			options a user has on a particular page to what they are allowed to do, which may be based
+			on a variety of rules such as if they are logged in, previous links or decisions they have made,
+			or if something in the system needs their attention.</p>
+			
+			<p><b>Linking</b><br>
+			Links in HTML can take two forms, both of which are created with the anchor tag
+			(-a>). They can either point to a resource in another location, or to a location within the
+			document. The former are used far more frequently than the latter, however internal links
+			are coming back into popularity with the rise of infinite scrolling.</p>
+			
+			<p><b>Absolute, Base, and Relative Path</b><br>
+			The href attribute of an anchor tag defines the actual location the link will represent.
+			Absolute and relative paths are two reference methods for connecting sites and pages.
+			While both methods can be used when creating links that point to content in our own site,
+			only absolute can be used when pointing to content that is outside of your domain.</p>
+			
+			<p>Absolute paths are the entire length of the link required to identify one resource, whether
+it is a page, image, script, or media file. The URL http://www.msn.com/news/index.htm
+tells us we want to go to the index page in the news folder of the msn.com website. If this
+was our site, and we wanted to go to the index.htm file in the sports folder, we could write it
+as http://www.msn.com/sports/index.htm (absolute) or ../sports/index.htm (relative). The
+initial .. instructs the browser that our intention is to go back one layer of depth (i.e. “up”
+one level in folders) and then into the sports folder, which in this example sits in the same
+parent folder as our news page.<br>
+Using just an initial / without .. tells the server that we want to start at the root folder of
+the server and navigate from there, meaning we start with the base path.</p>
+			
+			<p>A base path is everything needed to get us to the index page of the root folder of the
+site. This is typically http://www.yoursitename.com, and is the part you find missing in
+the relative path above. The combination of the base path, and relative path, equals your
+absolute path.</p>
+			
+			<p><b>Target</b><br>
+While the anchor tag supports several attributes, one of the most important of these is
+“target.” This attribute describes where links will be loaded, like a new tab or the same tab/
+browser window we are already using. The attribute can take any of the following values to
+define that location.</p>
+			
+			<p><b>Within the Page</b><br>
+We can add links to a page that move the user around the page itself, which is useful
+on pages with long content. To do this, we use an anchor tag to define where we want our
+destination to be. When we create our link, we simply reference the name of our anchor,
+preceded by a pound sign in place of a traditional URL.</p>
+		</details>
+		
 		<p>The W3C built <a href="https://validator.w3.org/">HTML</a> code walidator.</p>
 		<p><a title="Optional but oh so good" href="http://learn.shayhowe.com/html-css/getting-to-know-html/">Getting to Know HTML</a></p>
 		<p><a title="w3schools.com/tags" href="http://www.w3schools.com/tags/">HTML Tags</a></p>
@@ -510,13 +582,20 @@ page, if at all.</p>
 	<!-- week2 begin -->
 	<section>
 		<h2 id="week2">Week 2</h2>
-		<h3 id="dom">The Document Object Model (DOM)</h3>
-			<img src="http://i1126.photobucket.com/albums/l605/Yevgen_Farasevych/MOOCs/Introductio-to-HTML5-by-UniversityofMichigan--DOM_zpsssoeqh1n.gif" alt="picture The Document Object Model" title="The Document Object Model (DOM)"height="70%" width="70%">
-		<h3 id="html5elements">HTML5 Elements - Tags, Syntax, Semantics, and Templates</h3>
-			<img src="http://i1126.photobucket.com/albums/l605/Yevgen_Farasevych/MOOCs/Introductio-to-HTML5-by-UniversityofMichigan--Display_zpsfvwy3btm.gif" alt="picture of block and inline elevents" title="block and inline elevents" height="70%" width="70%">
-			<img src="http://i1126.photobucket.com/albums/l605/Yevgen_Farasevych/MOOCs/Introductio-to-HTML5-by-UniversityofMichigan--Images_zpsqdke2xhp.gif" alt="picture of image tag" title="image tag" height="70%" width="70%">
-			<img src="http://i1126.photobucket.com/albums/l605/Yevgen_Farasevych/MOOCs/Introductio-to-HTML5-by-UniversityofMichigan--Special-Entities_zpssx2o0via.gif" alt="picture Special Entities" title="Special Entities" height="70%" width="70%">
-		
+		<summary>
+			<details>
+				<h3 id="dom">The Document Object Model (DOM)</h3>
+			</details>
+				<img src="http://i1126.photobucket.com/albums/l605/Yevgen_Farasevych/MOOCs/Introductio-to-HTML5-by-UniversityofMichigan--DOM_zpsssoeqh1n.gif" alt="picture The Document Object Model" title="The Document Object Model (DOM)"height="70%" width="70%">
+		</summary>
+		<summary>
+			<details>
+				<h3 id="html5elements">HTML5 Elements - Tags, Syntax, Semantics, and Templates</h3>
+			</details>
+				<img src="http://i1126.photobucket.com/albums/l605/Yevgen_Farasevych/MOOCs/Introductio-to-HTML5-by-UniversityofMichigan--Display_zpsfvwy3btm.gif" alt="picture of block and inline elevents" title="block and inline elevents" height="70%" width="70%">
+				<img src="http://i1126.photobucket.com/albums/l605/Yevgen_Farasevych/MOOCs/Introductio-to-HTML5-by-UniversityofMichigan--Images_zpsqdke2xhp.gif" alt="picture of image tag" title="image tag" height="70%" width="70%">
+				<img src="http://i1126.photobucket.com/albums/l605/Yevgen_Farasevych/MOOCs/Introductio-to-HTML5-by-UniversityofMichigan--Special-Entities_zpssx2o0via.gif" alt="picture Special Entities" title="Special Entities" height="70%" width="70%">
+		</summary>
 		
 		<br>
 		<p>Week Two -- Read before quiz <br>Chapters 7 (again), 9, 10, 11, 13, 16, 18</p>
