@@ -366,9 +366,52 @@
 					</body>
 					</html>
 				</code></pre>
-			r
+						
+			<p>Now we can better see how elements can be placed within one another, called nesting. If
+			we save our file again, and double click the icon for our file in our documents folder to open
+			it, it should open in your computer’s default browser as a white page with Hello World in
+			the upper left corner. Congratulations! You have just made your first web page. Before you
+			ask, though, unless you have created your own server, you will not be able to show your page
+			to someone unless they are at your computer or you send them the file(s) you created. Since
+			only the browser is needed to view the output of HTML, JavaScript, and CSS files, we will
+			be able to view our pages without a server until the PHP examples later on.</p>
 			
-			<p></p>
+			<p>As we continue to make changes, you can keep your editor and browser open at the same
+			time. After you save your file in your text editor, you can simply refresh the page in your
+			browser to see your changes.</p>
+			
+			<p>Some tags, like those for including images, do not need a closing tag in order to work as
+			no content is necessary inside the tags. In this case, we simply use the tag itself where we
+			want it. In older versions of HTML one of the differences between document types was
+			how we closed single tag elements. HTML, for example, wanted a break written as <br>
+			while an XHTML document wanted <br/>. HMTL5 will recognize either of these.</p>
+			
+			<p><b>Head</b><br>
+			Getting back into our document, we see that the first set of tags is called head. This is
+			where we will put information about the page itself (called metadata) and where we will
+			connect to any other resources like scripts and files that are not part of the page we are
+			using. It is important that your -head> tags are always the first set of tags after -html>, as
+			this is the order in which browsers expect the information.</p>
+			
+			<p>To provide some basic information about our page or site, we will add some meta tags
+			inside our head to give it a title, keywords, a description, and other details. These pieces of
+			information help the user and bots understand what the page is about.</p>
+			
+			<p>Each of these items are all parts of the meta tag (<meta/>). Some tags have special
+			features that can be added to their definitions; these are called attributes. Meta tags support
+			attributes like name and content. How we define these attributes will help the browser
+			understand our page better. We will set our title as Our First Page, add the keywords begin-
+			ning html, learning, and CSIT-107, and for a description we will put in a couple lines about
+			what we are doing, and finally, add our name:</p>
+			
+			<pre><code><head>
+<title>Our First Page</title>
+<meta name="keywords" content="beginning html, learning,
+CSIT-107" />
+<meta name="description" content="A beginning web page for
+CSIT-107 SUNY Fredonia" />
+<meta name="author" content="Your Name Here" />
+				</head></code></pre>
 			
 			<p></p>
 			
