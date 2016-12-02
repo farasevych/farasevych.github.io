@@ -649,9 +649,19 @@ define that location.</p>
 			An initial video that simply plays when the page is loaded can be completed by adding the
 			following: <code>video src="ourfile.ogg" width="200" height="150" autoplay</code></p>
 			
-			<p></p>
+			<p>Take note that this is a pretty rude solution in many cases, as the file will start to play
+			as soon as enough of it is ready, and the user is left with no means of control except closing
+			the page entirely (think about the lovely ads we have all been subject to that use this type
+			of technique). To address this, we will add some more attributes: 
+				<code>video src="ourfile.ogg" width="200" height="150" autoplay controls preload="auto" poster="videoImage.png"</code>
+				</p>
 			
-			<p></p>
+			<p>Now we see a splash screen and controls. Our other options for preload (auto lets the
+			browser decide) are none and metadata. None will stop all preloading activity, while meta-
+			data loads information about the video like length and dimensions. Audio files are actually
+			identical to this approach (even the use of .ogg files) with exception to the ability to define
+			the width and height. All we need to change is our vocabulary, using the word audio instead
+			of video in our tag.</p>
 		</details>
 			
 		<p>The W3C built <a href="https://validator.w3.org/">HTML</a> code walidator.</p>
