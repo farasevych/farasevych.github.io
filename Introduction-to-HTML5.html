@@ -557,8 +557,32 @@ preceded by a pound sign in place of a traditional URL.</p>
 			look and feel of their pages. Recognizing I have already admitted to doing this in the past
 			when necessary, I will repeat my earlier statement: Please, do not.</p>
 			
-			<p></p>
-			<p></p>
+			<p>While this was a common method in the past, we now have elements in HTML that
+			are defined for such purposes. Tables should be reserved for creating collections of data or
+			information on your page and nothing else. If you are using them to store information other
+			than how you would in a spreadsheet, you should be using a div or span. Using a table for
+			content organization will create several complications in your code that can be reduced or
+			eliminated by following today’s conventions</p>
+			
+			<p>First, the formatting of the table is more
+			closely tied to HTML as it is easier to define
+			there than in CSS. Placing these definitions
+			in our HTML breaks our goal of separation
+			of duties to support a responsive design. If we
+			wanted to change the layout, we would have to
+			edit our HTML instead of just our CSS files.
+			Second, it creates extra lines of code to define the
+			layout we are looking for, and the use of column
+			and divs or spans to adjust for different layouts
+			is cumbersome when it comes to code main-
+			tenance and readability. Lastly, we lose a great
+			deal of our ability to reorganize our content in
+			multiple ways when using multiple CSS styles.
+			This means that rearranging the content in a
+			table when we want to print or view the content
+			in a different manner is more difficult, or would
+			require a whole different page to accomplish.</p>
+			
 			<p></p>
 		</details>
 		
