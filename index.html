@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Home page</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="My personal draft">
-  <meta name="author" content="Yevgen Farasevych">	
-  <link rel="stylesheet" href="styles.css"><!-- the type attribute is not necessary -->
-  <style type="text/css">
-    .header {
+  <head>
+    <meta charset="UTF-8">
+    <title>Home page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="My personal draft">
+    <meta name="author" content="Yevgen Farasevych">
+    <link rel="stylesheet" href="styles.css"><!-- the type attribute is not necessary -->
+    <style type="text/css">
+		.header {
 			background-color: ;
 			text-align: center;
 			text-decoration: none;
-    }
+		}
 		
-    header h1 a:hover {
+		header h1 a:hover {
 			text-decoration: none;
-    }
+		}
 		
 		.footer {
 			text-align: center;
@@ -27,11 +27,11 @@
 		}
 		
 		a {			
-    			text-decoration: none; /* Убираем подчеркивание у ссылок */
+			text-decoration: none; /* Убираем подчеркивание у ссылок */
 		}
    	
 		a:hover { 
-    			cursor:pointer; 
+			cursor:pointer; 
 			text-decoration: underline;
 			color: black;
 		}
@@ -40,187 +40,169 @@
 			color: black;
 			text-decoration: none;
 		}
-  </style>
-</head>
-<body>
-  <!--BEGIN layout-->
-  <div class="layout">
-    <!--BEGIN header-->	
-    <header class="header">
-      <h1><a href="/" class="logo">Home Page</a></h1>
-      <nav>		  	
-        <a href="#mooc">MOOC</a>
-        <a href="#log">Log</a>
-        <a href="#websites">Websites</a>
-        <a href="#learning">Learning</a>		  	
-      </nav>
-    </header>		
-    <!--END header-->
-		<!--BEGIN mooc-->
-		<section id="mooc" class="section mooc">
-		  <h2>MOOC</h2>	
-		  <ul>
-			  <li><b>Full Stack WEB Development</b> by Hong Kong University of Science and Technology
-				  <ul>
-				    <li><a href="dating-website.html">Dating Website</a></li>
-				    <li><a href="color-game.html">Color game</a></li>
-				  </ul>			
-			  </li>
-			  <li><a href="Introduction-to-HTML5.html"><b>Introduction to HTML5</b> by University of Michigan</a></li>				
-		  </ul>		
-		</section>
-		<!--END mooc-->
-	  <!--BEGIN log -->
-	  <section id="log"> 
-		  <h2>WEB dev log</h2>
-		  <ul>
-		  <details open>
-			  <summary>
-				  <b>2016</b>
-			  </summary>
-			  	<a href="https://dev.opera.com/articles/pwa-resources/" title="dev.opera.com (to reed)"><b>Progressive Web Apps: The definitive collection of resources</b></a><br>
-				<a href="http://www.w3schools.com/html/html5_syntax.asp" title="w3schools (2016-12-10)">HTML5 Style Guide and Coding Conventions</a><br>
-				<a href="http://www.w3schools.com/html/html5_semantic_elements.asp" title="w3schools (2016-12-10)">New Semantic Elements in HTML5</a><br>
-				<a href="https://dev.opera.com/articles/new-structural-elements-in-html5/"
-			   	
-				title="dev.opera.com (2016-12-09)">New Structural Elements in HTML5</a><br>
-				<a href="http://nicothin.pro/page/icon-fonts-2017"
-			   	 
-				title="SVG (2016-12-08)">Иконочные шрифты и почему они не нужны</a><br>
-				<a href="http://frontender.info/supports-will-change-your-life/" 
-				title="frontender.info (2016-12-08)">@supports изменит вашу жизнь</a><br>	
-				<a href="https://medium.freecodecamp.com/5-key-learnings-from-the-post-bootcamp-job-search-9a07468d2331#.rhk1pvvjb"
-			   	
-				title="I spent 3 months applying to jobs after a coding bootcamp. Here’s what I learned. (2016-12-08)">I spent 3 months applying to jobs after a coding bootcamp. Here’s what I learned.</a><br>	
-				<a href="https://vc.ru/p/csssr-programming"
-			   	
-				title="Куда пойти учиться программисту (2016-12-08)">Куда пойти учиться программисту: советы опытного тимлида, преподавателя и новичка</a><br>	
-				<a href="http://timpietrusky.com/"
-			   	
-				title="timpietrusky.com (2016-12-07)">timpietrusky.com</a><br>			
-				<a href="http://codepen.io/TimPietrusky/pen/Kazcy"
-			   	
-				title="TimPietrusky (2016-12-07)">codepen.io/TimPietrusky</a><br>
-				<a href="http://berlincodeofconduct.org/"
-			   	 
-				title="BERLIN CODE OF CONDUCT (2016-12-07)">BERLIN CODE OF CONDUCT</a><br>
-				<a href="https://davidwalsh.name/chris-coyiers-favorite-pens"
-			   	
-				title="CodePen Demos (2016-12-07)">Chris Coyier’s Favorite CodePen Demos</a><br>
-				<a href="https://drafts.csswg.org/css-flexbox/"
-			   	
-				title="CSS Flexible Box Layout Module Level 1 (reed)"><b>CSS Flexible Box Layout Module Level 1</b></a><br>
-				<a href="https://events.yandex.ru/lib/talks/1922/"
-			   	
-				title="БЭМ-технологии(посмотреть)"><b>Мастер-класс: Разрабатываем сайт с нуля на полном стеке БЭМ-технологий(video)</b></a><br>
-				<a href="http://wave.webaim.org/"
-			   	
-				title="wave.webaim.org (2016-12-04)">wave.webaim.org (проверка на доступность)</a><br>
-				<a href="https://www.youtube.com/watch?v=q8RID9nFWNM&t=1s"
-			   	
-				title="youtube--WSD (2016-12-04)">Клеим будущее с помощью PWA (video)</a><br>
-				<a href="https://pepelsbey.net/2013/05/flexbox-gotcha/"
-			   	
-				title="pepelsbey.net (посмотреть)"><b>Flexbox, теперь понятно (video)</b></a><br>
-				<a href="http://cssing.org.ua/"
-			   	
-				title="cssing.org.ua (2016-11-30)">cssing.org.ua</a><br>
-				<a href="https://habrahabr.ru/post/235851/"
-			   	 
-				title="habrahabr.ru (прочитать)"><b>CSS GuideLines, часть 1. Синтаксис и форматирование</b></a><br>
-				<a href="https://codeguida.com/post/448/"
-			   	
-				title="codeguida.com (прочитати)"><b>Що ви повинні знати про змінні CSS</b></a><br>
-				&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.smashingmagazine.com/2016/11/css-inheritance-cascade-global-scope-new-old-worst-best-friends/"
-			   	alt="CSS Inheritance, The Cascade And Global Scope: Your New Old Worst Best Friends" target="_blank" 
-				title="smashingmagazine.com (прочитать)"><b>CSS Inheritance, The Cascade And Global Scope: Your New Old Worst Best Friends</b></a><br>
-				&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://simurai.com/blog/2016/11/27/css-methodologies"
-			   	alt="When to use which CSS methodology" target="_blank" 
-				title="simurai.com (прочитать)"><b>When to use which CSS methodology</b></a><br>
-				&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://css.yoksel.ru/svg-patterns/"
-			   	alt="SVG-паттерны" target="_blank" 
-				title="css.yoksel.ru (прочитать)"><b>SVG-паттерны</b></a><br>
-				&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://prgssr.ru/development/grid-fleksboks-i-vyravnivanie-blokov-nasha-novaya-sistema-raskladki.html"
-			   	alt="Грид, флексбокс и выравнивание блоков: наша новая система раскладки" target="_blank" 
-				title="prgssr.ru (прочитать)"><b>Грид, флексбокс и выравнивание блоков: наша новая система раскладки</b></a><br>
-				&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://gist.github.com/iAdramelk/d328b73c72cab92ef95f"
-			   	alt="Длинная телега про Бутстрап" target="_blank" title="gist.github.com (2016-11-29)">Длинная телега про Бутстрап</a><br>
-				&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://frontender.info/whats-wrong-with-jquery-and-bootstrap/"
-			   	alt="О jQuery и Bootstrap" target="_blank" title="frontender.info (2016-11-29)">О jQuery и Bootstrap: расставляем точки над «i»</a><br>
-				&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://frontender.com.ua/mobile-web/wtf-viewport/"
-			   	alt="Что такое Viewport" target="_blank" title="frontender.com.ua (2016-11-28)">Что такое Viewport, как он работает и для чего вообще нужен</a><br>
-				&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://frontender.info/building-interactive-html5-videos/"
-			   	alt="Создание интерактивного видео на HTML5" target="_blank" 
-				title="frontender.info (2016-11-28)">Создание интерактивного видео на HTML5</a><br>
-				&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://medium.com/@mr_mig_by/a-year-of-change-a3063120e296#.c3eik9kho"
-			   	alt="A Year of Change" target="_blank" title="Medium.com (2016-11-28)">A Year of Change by Alexey Migutsky</a><br>
-				&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://vimeo.com/67092568"
-			   	alt="Свобода и ответственность. Опыт Tanki-Online в создании Agile-культуры" 
-				target="_blank" title="vimeo (2016-11-28)">Свобода и ответственность. Опыт Tanki-Online в создании Agile-культуры (video)</a><br>
-				&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://medium.com/@ABatickaya/%D0%B4%D0%BE%D1%81%D1%82%D1%83%D0%BF%D0%BD%D0%BE%D1%81%D1%82%D1%8C-%D1%81%D0%B0%D0%B9%D1%82%D0%BE%D0%B2-%D0%B4%D0%BB%D1%8F-%D1%81%D0%B0%D0%BC%D1%8B%D1%85-%D0%BC%D0%B0%D0%BB%D0%B5%D0%BD%D1%8C%D0%BA%D0%B8%D1%85-28d8ab6ebd3d#.ob2lp2pgr"
-			   	alt="Доступность сайтов для самых маленьких" target="_blank" title="Перевод на medium.com">Доступность сайтов для самых маленьких</a>
-			</details>
-			</ul>
-		</section>
-		<!--END log-->
+    </style>
+  </head>
+  <body>
+    <!--BEGIN layout-->
+    <div class="layout">
+      <!--BEGIN header-->	
+      <header class="header">
+        <h1><a href="/" class="logo">Home Page</a></h1>
+        <nav>
+          <a href="#mooc">MOOC</a>
+          <a href="#log">Log</a>
+          <a href="#websites">Websites</a>
+          <a href="#learning">Learning</a>
+        </nav>
+      </header>
+      <!--END header-->
+      <!--BEGIN mooc-->
+      <section id="mooc" class="section mooc">
+        <h2>MOOC</h2>
+        <ul>
+          <li><b>Full Stack WEB Development</b> by Hong Kong University of Science and Technology
+            <ul>
+              <li><a href="dating-website.html">Dating Website</a></li>
+              <li><a href="color-game.html">Color game</a></li>
+            </ul>
+          </li>
+          <li><a href="Introduction-to-HTML5.html"><b>Introduction to HTML5</b> by University of Michigan</a></li>
+        </ul>
+      </section>
+      <!--END mooc-->
+      <!--BEGIN log -->
+      <section id="log"> 
+        <h2>WEB dev log</h2>
+        <details open>
+          <summary>
+            <b>2016</b>
+          </summary>
+          <ul>
+            <li>
+              <a href="https://dev.opera.com/articles/pwa-resources/" title="dev.opera.com (to reed)"><b>Progressive Web Apps: The definitive collection of resources</b></a></li>
+            <li>
+              <a href="http://www.w3schools.com/html/html5_syntax.asp" title="w3schools (2016-12-10)">HTML5 Style Guide and Coding Conventions</a></li>
+            <li>
+              <a href="http://www.w3schools.com/html/html5_semantic_elements.asp" title="w3schools (2016-12-10)">New Semantic Elements in HTML5</a></li>
+            <li>
+              <a href="https://dev.opera.com/articles/new-structural-elements-in-html5/" title="dev.opera.com (2016-12-09)">New Structural Elements in HTML5</a></li>
+            <li>
+              <a href="http://nicothin.pro/page/icon-fonts-2017" title="SVG (2016-12-08)">Иконочные шрифты и почему они не нужны</a></li>
+            <li>
+              <a href="http://frontender.info/supports-will-change-your-life/" title="frontender.info (2016-12-08)">@supports изменит вашу жизнь</a></li>
+            <li>
+              <a href="https://medium.freecodecamp.com/5-key-learnings-from-the-post-bootcamp-job-search-9a07468d2331#.rhk1pvvjb" title="I spent 3 months applying to jobs after a coding bootcamp. Here’s what I learned. (2016-12-08)">I spent 3 months applying to jobs after a coding bootcamp. Here’s what I learned.</a></li>
+            <li>
+              <a href="https://vc.ru/p/csssr-programming" title="Куда пойти учиться программисту (2016-12-08)">Куда пойти учиться программисту: советы опытного тимлида, преподавателя и новичка</a></li>
+            <li>
+              <a href="http://timpietrusky.com/" title="timpietrusky.com (2016-12-07)">timpietrusky.com</a><br>
+            <li>
+              <a href="http://codepen.io/TimPietrusky/pen/Kazcy" title="TimPietrusky (2016-12-07)">codepen.io/TimPietrusky</a></li>
+            <li>
+              <a href="http://berlincodeofconduct.org/" title="BERLIN CODE OF CONDUCT (2016-12-07)">BERLIN CODE OF CONDUCT</a></li>
+            <li>
+              <a href="https://davidwalsh.name/chris-coyiers-favorite-pens" title="CodePen Demos (2016-12-07)">Chris Coyier’s Favorite CodePen Demos</a></li>
+            <li>
+              <a href="https://drafts.csswg.org/css-flexbox/" title="CSS Flexible Box Layout Module Level 1 (reed)"><b>CSS Flexible Box Layout Module Level 1</b></a></li>
+            <li>
+              <a href="https://events.yandex.ru/lib/talks/1922/" title="БЭМ-технологии(посмотреть)"><b>Мастер-класс: Разрабатываем сайт с нуля на полном стеке БЭМ-технологий(video)</b></a></li>
+            <li>
+              <a href="http://wave.webaim.org/" title="wave.webaim.org (2016-12-04)">wave.webaim.org (проверка на доступность)</a></li>
+            <li>
+              <a href="https://www.youtube.com/watch?v=q8RID9nFWNM&t=1s" title="youtube--WSD (2016-12-04)">Клеим будущее с помощью PWA (video)</a></li>
+            <li>
+              <a href="https://pepelsbey.net/2013/05/flexbox-gotcha/" title="pepelsbey.net (посмотреть)"><b>Flexbox, теперь понятно (video)</b></a></li>
+            <li>
+              <a href="http://cssing.org.ua/" title="cssing.org.ua (2016-11-30)">cssing.org.ua</a></li>
+            <li>
+              <a href="https://habrahabr.ru/post/235851/"	title="habrahabr.ru (прочитать)"><b>CSS GuideLines, часть 1. Синтаксис и форматирование</b></a></li>
+            <li>
+              <a href="https://codeguida.com/post/448/" title="codeguida.com (прочитати)"><b>Що ви повинні знати про змінні CSS</b></a></li>
+            <li>
+              <a href="https://www.smashingmagazine.com/2016/11/css-inheritance-cascade-global-scope-new-old-worst-best-friends/" title="smashingmagazine.com (прочитать)"><b>CSS Inheritance, The Cascade And Global Scope: Your New Old Worst Best Friends</b></a></li>
+            <li>
+              <a href="http://simurai.com/blog/2016/11/27/css-methodologies" title="simurai.com (прочитать)"><b>When to use which CSS methodology</b></a></li>
+            <li>
+              <a href="http://css.yoksel.ru/svg-patterns/" title="css.yoksel.ru (прочитать)"><b>SVG-паттерны</b></a></li>
+            <li>
+              <a href="http://prgssr.ru/development/grid-fleksboks-i-vyravnivanie-blokov-nasha-novaya-sistema-raskladki.html" title="prgssr.ru (прочитать)"><b>Грид, флексбокс и выравнивание блоков: наша новая система раскладки</b></a></li>
+            <li>
+              <a href="https://gist.github.com/iAdramelk/d328b73c72cab92ef95f" title="gist.github.com (2016-11-29)">Длинная телега про Бутстрап</a></li>
+            <li>
+              <a href="http://frontender.info/whats-wrong-with-jquery-and-bootstrap/" title="frontender.info (2016-11-29)">О jQuery и Bootstrap: расставляем точки над «i»</a></li>
+            <li>
+              <a href="http://frontender.com.ua/mobile-web/wtf-viewport/" title="frontender.com.ua (2016-11-28)">Что такое Viewport, как он работает и для чего вообще нужен</a></li>
+            <li>
+              <a href="http://frontender.info/building-interactive-html5-videos/" title="frontender.info (2016-11-28)">Создание интерактивного видео на HTML5</a></li>
+            <li>
+              <a href="https://medium.com/@mr_mig_by/a-year-of-change-a3063120e296#.c3eik9kho" title="Medium.com (2016-11-28)">A Year of Change by Alexey Migutsky</a></li>
+            <li>
+              <a href="https://vimeo.com/67092568" title="vimeo (2016-11-28)">Свобода и ответственность. Опыт Tanki-Online в создании Agile-культуры (video)</a></li>
+            <li>
+              <a href="https://medium.com/@ABatickaya/%D0%B4%D0%BE%D1%81%D1%82%D1%83%D0%BF%D0%BD%D0%BE%D1%81%D1%82%D1%8C-%D1%81%D0%B0%D0%B9%D1%82%D0%BE%D0%B2-%D0%B4%D0%BB%D1%8F-%D1%81%D0%B0%D0%BC%D1%8B%D1%85-%D0%BC%D0%B0%D0%BB%D0%B5%D0%BD%D1%8C%D0%BA%D0%B8%D1%85-28d8ab6ebd3d#.ob2lp2pgr" title="Перевод на medium.com">Доступность сайтов для самых маленьких</a></li>
+          </ul>
+        </details>
+    </section>
+    <!--END log-->
     <!--BEGIN websites-->
-    <section id="websites" class="section">			      
-	  	<h2>Websites</h2>	
-	  	<ul>
-	    	<li><a href="http://kwambio.com/" title="kwambio.com (2016-11-30)">kwambio.com</a></li>
-	    	<li><a href="http://simurai.com/" title="simurai.com (2016-11-29)">simurai.com</a></li>
-	    	<li><a href="http://rog.ie/" title="rog.ie (2016-11-29)">rog.ie</a></li>
-	    	<li><a href="http://riverco.de/" title="Coderiver (2016-11-28)">riverco.de</a></li>		
-      </ul>	
+    <section id="websites" class="section">
+      <h2>Websites</h2>	
+      <ul>
+        <li><a href="http://kwambio.com/" title="kwambio.com (2016-11-30)">kwambio.com</a></li>
+        <li><a href="http://simurai.com/" title="simurai.com (2016-11-29)">simurai.com</a></li>
+        <li><a href="http://rog.ie/" title="rog.ie (2016-11-29)">rog.ie</a></li>
+        <li><a href="http://riverco.de/" title="Coderiver (2016-11-28)">riverco.de</a></li>
+      </ul>
     </section>
     <!--END websites-->
     <!--BEGIN learning-->
     <section id="learning">        
-	  	<h2>Learning</h2>
-	  	<ul>
-	    	<li><a href="http://javarush.ru/cs50.html" title="javarush.ru">CS50 на русском</a></li>
-	  	</ul>
-	  	<h4>HTML</h4>
-		  <ul>
-			  <li><a href="https://github.com/h5bp/Front-end-Developer-Interview-Questions/tree/master/Translations/Russian#html" title="Front-end-Developer-Interview-Questions" 
-				 >Вопросы кандидату на должность front-end разработчика</a></li>
-			  <li><a href="https://github.com/h5bp/Front-end-Developer-Interview-Questions" 
-				 title="Front-end-Developer-Interview-Questions">Front-end-Developer-Interview-Questions</a></li>
-			  <li></li>
-			  <li><a href="https://htmlacademy.ru/" title="HTML Academy">HTML Academy</a></li>
-			  <li></li>
-		  </ul>
-	  	<h4>CSS3</h4>
-			<ul>
-		  	<li><a href="http://flexbox.io/" title="flexbox.io">What The Flexbox?! by Wes Bos</a></li>
-			</ul>
-	  	<h4>JS</h4>
-		  <ul>
-			  <li><a href="https://javascript30.com/" title="Build 30 things in 30 days with 30 tutorials">30 Day Vanilla JS Coding Challenge by Wes Bos</a></li>
-			  <li><a href="http://learn.javascript.ru/" title="Современный учебник Javascript">Современный учебник Javascript</a></li>
-			  <li><a href="https://ru.hexlet.io/" title="hexlet.io">hexlet.io</a></li>
-			  <li><a href="https://www.youtube.com/watch?v=H6G63NKRSi8&list=PL363QX7S8MfSxcHzvkNEqMYbOyhLeWwem" title="видеокурс Sorax по основам JavaScript" >Видеокурс Sorax по основам JavaScript (Youtube)</a></li>
-			  <li><a href="https://www.youtube.com/playlist?list=PLaEXvLxQXu_0cCfWRm9x61Jf8wG8C1-Ho" 
-				 title="Youtube">React Club (React, redux lessons in Russian on Youtube)</a></li>
-			  <li><a href="https://www.codewars.com/" title="На практике полезно решать каты из Codewars.">Achieve mastery through challenge on codewars.com</a></li>
-			  <li>JavaScript: The Definitive Guide — читать обязательно. Лучше раза три. А потом держать под рукой как справочник.</li>
-		  </ul>		
+      <h2>Learning</h2>
+      <ul>
+        <li><a href="http://javarush.ru/cs50.html" title="javarush.ru">CS50 на русском</a></li>
+      </ul>
+      <h4>HTML</h4>
+      <ul>
+        <li><a href="https://github.com/h5bp/Front-end-Developer-Interview-Questions/tree/master/Translations/Russian#html" title="Front-end-Developer-Interview-Questions">Вопросы кандидату на должность front-end разработчика</a></li>
+        <li><a href="https://github.com/h5bp/Front-end-Developer-Interview-Questions" title="Front-end-Developer-Interview-Questions">Front-end-Developer-Interview-Questions</a></li>
+        <li><a href="https://htmlacademy.ru/" title="HTML Academy">HTML Academy</a></li>
+      </ul>
+      <h4>CSS3</h4>
+      <ul>
+        <li><a href="http://flexbox.io/" title="flexbox.io">What The Flexbox?! by Wes Bos</a></li>
+      </ul>
+      <h4>JS</h4>
+      <ul>
+        <li>
+          <a href="https://javascript30.com/" title="Build 30 things in 30 days with 30 tutorials">30 Day Vanilla JS Coding Challenge by Wes Bos</a></li>
+        <li>
+          <a href="http://learn.javascript.ru/" title="Современный учебник Javascript">Современный учебник Javascript</a></li>
+        <li>
+          <a href="https://ru.hexlet.io/" title="hexlet.io">hexlet.io</a></li>
+        <li>
+          <a href="https://www.youtube.com/watch?v=H6G63NKRSi8&list=PL363QX7S8MfSxcHzvkNEqMYbOyhLeWwem" title="видеокурс Sorax по основам JavaScript" >Видеокурс Sorax по основам JavaScript (Youtube)</a></li>
+        <li>
+          <a href="https://www.youtube.com/playlist?list=PLaEXvLxQXu_0cCfWRm9x61Jf8wG8C1-Ho" title="Youtube">React Club (React, redux lessons in Russian on Youtube)</a></li>
+        <li>
+          <a href="https://www.codewars.com/" title="На практике полезно решать каты из Codewars.">Achieve mastery through challenge on codewars.com</a></li>
+        <li>JavaScript: The Definitive Guide — читать обязательно. Лучше раза три. А потом держать под рукой как справочник.</li>
+      </ul>
       <article>
-	    	<details>
-		    	<summary>Есть три составляющих обучения - знания, умения, навыки.</summary>
-	    			<p>Знания - это то, что вы получаете на уроках (видео или офлайн) и то, что у вас остается в мозгу. 
-		 				Самая ненадежная структура. Если не подкреплять, то через пару дней от знаний ничего 		не останется.</p>
-	    			<p>Умения - это когда вы с помощью знаний можете что-то сделать. Можете применить знания. Поэтому практика очень важна.</p>
-	    			<p>Навык - это умение, доведенное до автоматизма. На этом этапе вы становитесь программистом. 
-						Требует много практики. Очень много.</p>
-	    			<p>Пройдете весь путь ЗУН - будет счастье.</p>
-	    			<p>Есть еще 4 составляющая обучения - информация. Она стоит до знаний. Информацию вы получаете на ютюбе и в 
-		 				прочих злачных местах. Информация не задерживается в голове. Совсем. Но вам кажется, 		что задержалась. 
-		 				Это такой большой обман мозга.
-		 				Не нужно его обманывать, а нужно учиться и практиковаться. Тогда станете программистом 		или кем угодно. 
-		 				Это универсальные советы для любого дела.</p>
-	    	</details>
-	  	</article>       
+        <h4>Три составляющих обучения</h4>
+        <details>
+          <summary>Знания, умения, навыки</summary>
+            <p>Знания - это то, что вы получаете на уроках (видео или офлайн) и то, что у вас остается в мозгу. Самая ненадежная структура. Если не подкреплять, то через пару дней от знаний ничего не останется.</p>
+            <p>Умения - это когда вы с помощью знаний можете что-то сделать. Можете применить знания. Поэтому практика очень важна.</p>
+            <p>Навык - это умение, доведенное до автоматизма. На этом этапе вы становитесь программистом. 
+            Требует много практики. Очень много.</p>
+            <p>Пройдете весь путь ЗУН - будет счастье.</p>
+            <p>Есть еще 4 составляющая обучения - информация. Она стоит до знаний. Информацию вы получаете на ютюбе и в 
+            прочих злачных местах. Информация не задерживается в голове. Совсем. Но вам кажется, что задержалась. 
+            Это такой большой обман мозга.
+            Не нужно его обманывать, а нужно учиться и практиковаться. Тогда станете программистом или кем угодно. 
+            Это универсальные советы для любого дела.</p>
+        </details>
+      </article>       
     </section>
     <!--END learning-->
     <!--BEGIN footer-->
