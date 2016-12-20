@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML Stuff</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <!-- BEGIN layout -->
+    <div class="layout">
+      <!-- BEGIN header -->
+      <header class="header">
+        <h1><a href="/" class="logo">HTML Stuff</a></h1>
+        <nav>
+          <a href="http://farasevych.github.io/">Home page</a>
+        </nav>
+      </header>
+      <!--END header -->
+      <P>Links:<br>
+        <a href="https://html.spec.whatwg.org/multipage/index.html"
+        >HTML Living Standard — Last Updated 19 December 2016</a></P>
+      <!-- BEGIN forms -->
+      <section id="forms" class="section forms">
+        <h2>Forms</h2>
+        <p><strong>Forms</strong> are used to collect data inputted by a user. They can be used as an interface for a web application, for example, or to send data across the web.</p>
+        <p>Links:</p>
+        <ul>
+          <li>
+            <a href="http://htmldog.com/guides/html/beginner/forms/"
+            title="htmldog.com">Forms (HTML Beginner Tutorial)</a></li>
+          <li>
+            <a href="http://htmldog.com/guides/html/advanced/forms/"
+            title="htmldog.com">Accessible Forms (HTML Advanced Tutorial)</a></li>
+          <li>
+            <a href="https://www.w3.org/TR/html5/forms.html"
+            title="www.w3.org">W3C Recommendation 28 October 2014</a></li>
+        </ul>
+        <fieldset>
+          <legend>&lt form &gt - блочный тег, т.е. занимает 100% по ширине</legend>
+          <p>Атрибут <mark>action=""</mark> указывает некий адрес документа, который будет обрабатывать содержимое формы.</p>
+          <p>Атрибут <mark>method=""</mark> указывает метод отправки данных. Принимает всего два значения POST и GET. GET - метод по-умолчанию, позволяет видеть вводимые данные в URL, отправляет ограниченное число символов. POST - можно отправлять фото, видео, большой текст.</p>
+          <p>Атрибут <mark>novalidate</mark> при отправке формы, она не будет проверяться на правильность заполненности.</p>
+          <p>Атрибут <mark>autocomplete="on"</mark> По умолчанию - OFF. Сработает только если была отправленна форма. Заполняет формы после возврата на страницу. Можно прописать для отдельного инпута.</p>
+          <p>Атрибут <mark>enctype=""</mark> указывает некий тип кодирования. Работать будет при методе POST. Может принимать три значения:
+            <dl>
+              <dt>"application/x-www-form-urlencoded"</dt>
+                <dd>По умолчанию установлено именно это значение. Если в текстовое поле вводится текст и эти данные отправляются на сервер, и если эти данные содержат кириллические буквы, то они будут заменяться на их шестьнадцатиричные значения, а пробелы будут заменяться на знаки "плюс".</dd>
+              <dt>"multipart/form-data"</dt>
+                <dd>Для отправки файлов при помощи формы. Для отправки изображения, данный атрибут обязателен. Часто используется на практике.</dd>
+              <dt>"text/plain"</dt>
+                <dd>Данные не кодируются. Пробелы заменяются знаком "плюс".</dd>
+            </dl></p>
+          <p>Атрибут <mark>target=""</mark> помимо прочего, может быть установлено имя айфрейма, в который будет загружаться результат обработанный сервером. Например, можно вставить значение target="iframe" и создать на странице &lt iframe name="iframe"&gt? </p>
+        </fieldset>
+        <p>Attribute <mark>value="something"</mark> fixes what is shown at the start.</p>
+        <p>Attribute <mark>placeholder="something"</mark> shows useful text which disappeared when the user enter something.</p>
+        <p>Attribute <mark>autofocus</mark> sets which field is given focus at the start.</p>
+        <p>Attribute <mark>required</mark> means this field must be completed.</p>
+        <form action="http://farasevych.github.io/" method="post">
+          <fieldset>
+            <legend>Input - тэг, который используется для создания интерактивных элементов форм</legend>
+            <p><label>Plain text: <input type="text" name="feedback"></label></p>
+            <p><label>Password field: <input type="password" name="userpassword"></label></p>
+            <p><label>Поле для ввода e-mail: <input type="email" name="email"></label></p>
+            <p><label>Поле для ввода url: <input type="url" name="url"></label></p>
+            <p><label>Поле для поиска: <input type="search" name=""></label></p>
+            <p><label>Поле для телефона: <input type="tel" name=""></label></p>
+            <p><label>Выбор цвета: <input type="color" name=""></label></p>
+            <p><label>Спрятанное поле: <input type="hidden" name=""></label></p>
+            <p><label>Числовое поле: <input type="number" name=""></label></p>
+            <p><label>Ввод даты без времени: <input type="date" name=""></label></p>
+            <p><label>Ввод даты и времени: <input type="datetime" name=""></label></p>
+            <p><label>Поле диапазон: <input type="range" name="" min="0" max="1000" step="100"></label></p>
+            <p><label>Контроль ввода даты: <input type="datetime-local" name=""></label></p>
+            <p><label>Ввод месяца: <input type="month" name=""></label></p>
+            <p><label>Ввод времени: <input type="time" name=""></label></p>
+            <p><label>Ввод недели: <input type="week" name=""></label></p>
+            <!-- checkbox -->
+            <p>Checkbox:<br>
+            <label><input type="checkbox" name="items" value="Kuku"> Kuku</label><br>
+            <label><input type="checkbox" name="items" value="Hoho"> Hoho</label><br>
+            <label><input type="checkbox" name="items" value="Hihi"> Hihi</label><br>
+            </p>
+            <!-- radio -->
+            <p>Radio button:<br>
+            <label><input type="radio" name="check" value="green"> Green</label><br>
+            <label><input type="radio" name="check" value="red"> Red</label><br>
+            <label><input type="radio" name="check" value="blue"> Blue</label><br>
+            </p>
+            <p><label>Кнопка без поведения: <input type="button" name=""></label></p>
+            <p><label>Графическая кнопка : <input type="image" alt="image" src="" height="" width="" name="file"></label></p>
+            <p><label>Кнопка для очищения формы: <input type="reset" name="file"></label></p>
+            <p><label>File selector: <input type="file" name="file"></label></p><!-- accept=""(указать либо) -->
+            <p><label>Submit button: <input type="submit" name="submit" value="Send"></label></p>
+            <p>Атрибут <mark>maxlength=""</mark> ограничивает ввод определенным числом символов.</p>
+            <p>Атрибут <mark>placeholder=""</mark> полупрозрачный текст-подсказка в поле, исчезает при вводе текста.</p>
+            <p>Атрибут <mark>required</mark> поле обязательное для заполнения. Не сработает, если в теге form бедет указан атрибут novalidate.</p>
+            <p>Атрибут <mark>readonly</mark> поле можно только прочитать.</p>
+            <p>Атрибут <mark>size=""</mark> указывает размеры поля.</p>
+            <p>Атрибут <mark>spellcheck</mark> проверяет орфографию в полях типа text и search. Может принимать три значения: TRUE - будет проверяться орфография; FALSE - орфография не будет проверяться; DEFAULT - зависит от браузера, решает браузер-подсвечивать или нет.</p>
+            <p>Атрибут <mark>pattern=""</mark> указывается шаблон ввода тескта. Например наличие симлов имейла и т.п.</p>
+            <p>Атрибут <mark>name=""</mark> указывается обязательно, и нужно для обработки данных на сервере.</p>
+            <p>Атрибут <mark>checked</mark> для чекбокса и радиобаттонс. Отмечает по умолчанию. У радиобаттонс отмечается последняя кнопка (при наличии атрибута более чем на одном варианте).</p>
+            <p>Атрибут <mark>accept=""</mark> указывается для типа file. Указывает какого типа файлы можно загружать, например видео, аудио, изображения и т.п. Можно либо, присвоить значение майнсет из таблицы типов файлов, либо следующие три значения: "audio/*", "video/*", "image/*". Также, можно дополнительно указывать майнтипы: "image/jpg, image/png", здесь загружать можно только изображения с указанным расширением.</p>
+            <p>Атрибут <mark>multiple</mark> для типа file и email, позволяет выбирать несколько файлов для загрузки.</p>
+            <p>Атрибут <mark>tabindex=""</mark> порядок табов.</p>
+          </fieldset>
+        </form>
+        <p>В HTML существуют глобальные атрибуты ID и CLASS.</p>
+        <form action="page.html" method="POST" autocomplete="on">
+          <fieldset>
+            <legend>Datalist - выпадающий список вариантов заполнения поля.</legend>
+            <input type="text" name="myName" placeholder="Your name: " list="namesList">
+            <datalist id="namesList">
+              <option value="Dima">
+              <option value="Kolya">
+              <option value="Fima">
+            </datalist>
+            <input type="submit" name="">
+            <p>Можно использовать в поле URL, email и т.д.</p>
+          </fieldset>
+        </form>
+        <fieldset>
+          <legend>fieldset</legend>
+          <p>Атрибут <mark>disabled</mark> для fieldset, делает все содержимое не доступным для редактирования.</p>
+        </fieldset>
+        <fieldset>
+          <legend>&lt select &gt</legend>
+            <select name="cities">
+              <option value="mos" disabled>Moskow</option>
+              <option value="hk">Hong Kong</option>
+              <option value="ny">New York</option>
+              <option value="lon">London</option>
+            </select>        
+        </fieldset>
+        <fieldset>
+          <legend>&lt textarea &gt</legend>
+          <textarea name="" id="" cols="30" rows="5" wrap="">           
+          </textarea>
+           <p>Атрибут <mark>wrap=""</mark> отвечает за формат переноса текста на новую строку при отправке данных на сервер. Может иметь три значения: SOFT - все в одну строку; HARD - оправится с переносами; OFF.</p>
+        </fieldset>
+        <hr>
+      </section>
+      <!-- END forms -->
+    </div>
+    <!-- END layout -->
+  </body>
+</html>
