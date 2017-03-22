@@ -18,7 +18,7 @@ body {
 }
 
 header {
-	background: url(/01--PSD-to-HTML/bg-header.jpg) no-repeat center center;
+	background: url(01--PSD-to-HTML/bg-header.jpg) no-repeat center center;
 	text-align: center;
 	color: #fff;
 	background-size: cover; /*Робить фон "гумовим"*/
