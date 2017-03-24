@@ -1,0 +1,33 @@
+.header {
+	background-color: ;
+	text-align: center;
+	text-decoration: none;
+}
+		
+header h1 a:hover {
+	text-decoration: none;
+}
+		
+.footer {
+	text-align: center;
+}
+		
+body {
+	background: #cbecdf;
+    font-family: monospace; /*'Open Sans', sans-serif*/
+    font-size: 1em;
+}
+		
+a {			
+	text-decoration: none; /* Убираем подчеркивание у ссылок */
+}
+
+a:hover { 
+	cursor:pointer;			
+	color: black;
+}
+		
+.logo {
+	color: black;
+	text-decoration: none;
+}
