@@ -15,16 +15,20 @@ header h1 a:hover {
 body {
 	background: #cbecdf;
     font-family: monospace; /*'Open Sans', sans-serif*/
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 		
 a {			
 	text-decoration: none; /* Убираем подчеркивание у ссылок */
+	color: #24292e;
 }
 
 a:hover { 
 	cursor:pointer;			
-	color: black;
+	color: ;
+	font-weight: bold;
+	background-color: #999;
+
 }
 		
 .logo {
@@ -34,5 +38,5 @@ a:hover {
 
 .not-learned {
 	font-weight: bold;
-	font-size: 1.2rem;
+	font-size: 1.5rem;
 }
