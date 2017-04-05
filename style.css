@@ -27,10 +27,14 @@ a:hover {
 	cursor:pointer;			
 	color: ;
 	font-weight: bold;
-	background-color: #999;
+	background-color: rgba(99, 99, 99, 0.35);
 
 }
-		
+
+.not-learned a:hover {
+	color: red;
+}
+	
 .logo {
 	color: black;
 	text-decoration: none;
