@@ -13,7 +13,8 @@ header h1 a:hover {
 }
 
 body {
-	background: #cbecdf;
+	/* background: #cbecdf; */
+	
 	font-family: monospace; /*'Open Sans', sans-serif*/
 	font-size: 1.5rem;
 }
